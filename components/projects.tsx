@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 
 export default function Projects() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true })
@@ -14,7 +14,7 @@ export default function Projects() {
         "A modern dashboard application featuring smooth UI, authentication, and real-time data visualization built with Next.js and TailwindCSS.",
       tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vercel"],
       image: "/royal-bg.png",
-      github: "https://github.com", // update with your actual GitHub repo link
+       // update with your actual GitHub repo link
       demo: "https://project-two-roan-97.vercel.app",
     },
   ]
@@ -88,14 +88,10 @@ export default function Projects() {
                     {/* Links */}
                     <div className="flex gap-3">
                       <motion.a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="flex-1 px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 transition-all flex items-center justify-center gap-2 text-sm font-medium"
+                        
+                        
                       >
-                        <Github size={16} /> GitHub
+                        
                       </motion.a>
                       <motion.a
                         href={project.demo}
