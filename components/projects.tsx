@@ -9,58 +9,13 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce API",
+      title: "Royal Dashboard",
       description:
-        "A scalable REST API for an e-commerce platform with payment integration, inventory management, and real-time order tracking.",
-      tech: ["Node.js", "Express", "MongoDB", "Stripe", "Redis"],
-      image: "/ecommerce-api-dashboard.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
-    },
-    {
-      title: "Real-time Chat Application",
-      description:
-        "A WebSocket-based chat application with user authentication, message history, and real-time notifications.",
-      tech: ["Node.js", "Socket.io", "PostgreSQL", "JWT", "Redis"],
-      image: "/chat-application-interface.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
-    },
-    {
-      title: "Microservices Architecture",
-      description:
-        "A distributed system with multiple microservices for user management, product catalog, and order processing.",
-      tech: ["Node.js", "Docker", "Kubernetes", "RabbitMQ", "PostgreSQL"],
-      image: "/microservices-architecture-diagram.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
-    },
-    {
-      title: "Analytics Dashboard",
-      description:
-        "A real-time analytics dashboard that processes and visualizes large datasets with WebSocket updates.",
-      tech: ["Node.js", "Express", "MongoDB", "WebSocket", "D3.js"],
-      image: "/analytics-dashboard-charts.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
-    },
-    {
-      title: "API Gateway",
-      description:
-        "A centralized API gateway with rate limiting, authentication, and request routing for microservices.",
-      tech: ["Node.js", "Express", "JWT", "Redis", "Docker"],
-      image: "/api-gateway-architecture.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
-    },
-    {
-      title: "Data Pipeline",
-      description:
-        "An ETL pipeline that processes, transforms, and loads data from multiple sources into a data warehouse.",
-      tech: ["Node.js", "PostgreSQL", "Apache Kafka", "Docker", "AWS"],
-      image: "/data-pipeline-flow.jpg",
-      github: "https://github.com",
-      demo: "https://example.com",
+        "A modern dashboard application featuring smooth UI, authentication, and real-time data visualization built with Next.js and TailwindCSS.",
+      tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vercel"],
+      image: "/royal-bg.png",
+      github: "https://github.com", // update with your actual GitHub repo link
+      demo: "https://project-two-roan-97.vercel.app",
     },
   ]
 
@@ -90,14 +45,14 @@ export default function Projects() {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-              Featured <span className="text-primary">Projects</span>
+              Featured <span className="text-primary">Project</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              A selection of projects showcasing my expertise in backend development and system design
+              A showcase of my latest frontend project with interactive design and smooth animations.
             </p>
           </motion.div>
 
-          {/* Projects Grid */}
+          {/* Project Card */}
           <motion.div variants={containerVariants} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div key={index} variants={itemVariants} whileHover={{ y: -10 }} className="group relative">
