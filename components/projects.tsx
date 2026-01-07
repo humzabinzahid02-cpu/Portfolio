@@ -7,17 +7,25 @@ import { ExternalLink } from "lucide-react"
 export default function Projects() {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true })
 
-  const projects = [
-    {
-      title: "Royal Dashboard",
-      description:
-        "A modern dashboard application featuring smooth UI, authentication, and real-time data visualization built with Next.js and TailwindCSS.",
-      tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vercel"],
-      image: "/royal-bg.png",
-       // update with your actual GitHub repo link
-      demo: "https://project-two-roan-97.vercel.app",
-    },
-  ]
+const projects = [
+  {
+    title: "Royal Dashboard",
+    description:
+      "A modern dashboard application featuring smooth UI, authentication, and real-time data visualization built with Next.js and TailwindCSS.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vercel"],
+    image: "/royal-bg.png",
+    demo: "https://project-two-roan-97.vercel.app",
+  },
+  {
+    title: "GPU Switcher Clone",
+    description:
+      "A frontend clone of the GPU Switcher website focusing on clean UI, responsive layouts, and smooth animations using modern web technologies.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vercel"],
+    image: "/gpu-switcher.png", // add this image to /public
+    demo: "https://gpu-switcher-clone.vercel.app/",
+  },
+]
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
