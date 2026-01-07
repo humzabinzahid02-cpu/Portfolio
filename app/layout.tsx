@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Frontend Developer | Crafting Modern, Responsive & High-Performance UIs",
   generator: "v0.app",
 }
-
+// "use client"
 export default function RootLayout({
   children,
 }: Readonly<{
