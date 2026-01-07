@@ -42,10 +42,16 @@ export default function About() {
             {/* Left - Bio */}
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I’m a Frontend Developer passionate about creating clean, responsive, and user-friendly web interfaces. I specialize in building modern web applications using technologies like React, Next.js, Tailwind CSS, and Node.js. I enjoy turning ideas into reality through code and continuously improving my skills to stay up-to-date with the latest trends in web development.
+  I’m a Frontend Developer who enjoys building clean, responsive, and intuitive user interfaces.
+  I specialize in crafting modern web applications using React, Next.js, Tailwind CSS, and TypeScript.
+  My focus is on creating smooth user experiences, writing maintainable code, and delivering
+  visually polished products.
+  <br /><br />
+  I have hands-on experience working with APIs, optimizing UI performance, and translating
+  designs into high-quality, production-ready interfaces. I’m always eager to learn,
+  improve, and stay aligned with the latest trends in frontend development.
+</p>
 
-I’ve worked on various projects involving API integrations, UI/UX optimization, and performance improvements, ensuring smooth and scalable digital experiences.
-              </p>
 
               {/* Skills Highlight */}
               <div className="pt-6 space-y-3">

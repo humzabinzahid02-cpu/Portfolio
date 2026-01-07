@@ -8,13 +8,15 @@ export default function Skills() {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true })
 
   const skills = [
-    { icon: Code2, name: "Node.js", color: "from-green-500 to-emerald-500" },
-    { icon: Code2, name: "Express.js", color: "from-yellow-500 to-orange-500" },
-    { icon: GitBranch, name: "Git", color: "from-orange-600 to-red-600" },
-  
-    { icon: Zap, name: "TypeScript", color: "from-blue-500 to-indigo-500" },
-    
-  ]
+  { icon: Code2, name: "React.js", color: "from-cyan-500 to-blue-500" },
+  { icon: Code2, name: "Next.js", color: "from-gray-700 to-gray-900" },
+  { icon: Zap, name: "TypeScript", color: "from-blue-500 to-indigo-500" },
+  { icon: Package, name: "Tailwind CSS", color: "from-teal-400 to-cyan-500" },
+  { icon: GitBranch, name: "Git & GitHub", color: "from-orange-600 to-red-600" },
+  { icon: Cloud, name: "Vercel Deployment", color: "from-purple-500 to-pink-500" },
+  { icon: Database, name: "API Integration", color: "from-green-500 to-emerald-500" },
+]
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -45,7 +47,8 @@ export default function Skills() {
               Technical <span className="text-primary">Skills</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A comprehensive toolkit of technologies and tools I use to build scalable Frontend web
+              A focused set of technologies and tools I use to build modern, responsive, and high-performance frontend applications.
+
             </p>
           </motion.div>
 
